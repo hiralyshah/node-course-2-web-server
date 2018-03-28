@@ -1,0 +1,17 @@
+doctype html
+html
+    body
+        h1 Hello World, this is #{pageTitle}!
+
+        if name != null
+            p Hi there, #{name}!
+        else
+            p Hi there, unknown person!
+
+        p Have some vegetables:
+
+        ul
+            for vegetable in vegetables
+                li= vegetable
+    footer
+        p Copyright #{currentYear}

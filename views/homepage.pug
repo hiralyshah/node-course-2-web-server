@@ -1,0 +1,24 @@
+doctype html
+html
+    body
+        h1 Welcome to Kornchain #{sitename}!
+        a(href='https://www.google.co.uk') Google
+        |
+        |
+        - var url = 'pug-test.html';
+        a(href='/' + url) Link
+        |
+        |
+        - url = 'https://example.com/'
+        a(href=url) Another link
+        |
+        |
+        a(href='/about') about
+        |
+        |
+        a(href='/index') index
+       
+        
+    footer
+        p Created by #{name} - Copyright #{currentYear}
+        p #{now}
